@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 
-$(".next").click(
+$(".next").click (
   function() {
     var removeActive = $(".slider-wrapper .active");
     removeActive.removeClass("active");
@@ -42,40 +42,47 @@ var secondCircle = $(".slider-wrapper .nav i:nth-child(2)");
 var thirdCircle = $(".slider-wrapper .nav i:nth-child(3)");
 var fourthCircle = $(".slider-wrapper .nav i:nth-child(4)");
 
-firstCircle.click(
-  function () {
-    primaImmagine.show();
-  }
-);
-
-secondCircle.click(
-  function () {
-    secondaImmagine.show();
-  }
-)
-
-thirdCircle.click(
-  function () {
-    terzaImmagine.show();
-  }
-)
-
-fourthCircle.click(
-  function () {
-    quartaImmagine.show();
-  }
-)
 
 function click (num1, num2) {
   num1.click (
     function () {
-      num2.show();
+      num2.addClass();
     }
   );
 }
 
-click (firstCircle, primaImmagine);
-
+firstCircle.click(
+  function () {
+    var removeActive = $(".slider-wrapper .active");
+    removeActive.removeClass("active");
+    primaImmagine.addClass("active");
+    firstCircle.addClass("active");
+  }
+);
+secondCircle.click(
+  function () {
+    var removeActive = $(".slider-wrapper .active");
+    removeActive.removeClass("active");
+    secondaImmagine.addClass("active");
+    secondCircle.addClass("active");
+  }
+)
+thirdCircle.click(
+  function () {
+    var removeActive = $(".slider-wrapper .active");
+    removeActive.removeClass("active");
+    terzaImmagine.addClass("active");
+    thirdCircle.addClass("active");
+  }
+)
+fourthCircle.click(
+  function () {
+    var removeActive = $(".slider-wrapper .active");
+    removeActive.removeClass("active");
+    quartaImmagine.addClass("active");
+    fourthCircle.addClass("active");
+  }
+)
 
 }
 );
