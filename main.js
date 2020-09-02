@@ -27,8 +27,16 @@ $(".prev").click(
 
 $(document).keydown(
   function() {
-    if (e.keyCode == 37) {
-    alert("left arrow");
+    if (event.which == 37) {
+    $(".prev").click();
+  }
+}
+);
+
+$(document).keydown(
+  function() {
+    if (event.which == 39) {
+    $(".next").click();
   }
 }
 );
