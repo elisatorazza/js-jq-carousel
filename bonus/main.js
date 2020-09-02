@@ -26,15 +26,11 @@ $(document).keydown(
   function() {
     if (event.which == 37) {
     $(".prev").click();
-  }
-});
-
-$(document).keydown(
-  function() {
-    if (event.which == 39) {
+  } else if (event.which == 39) {
     $(".next").click();
   }
 });
+
 
 // function mostraImmagine (numImg, numCircle) {
 //   numCircle.click(
@@ -44,26 +40,40 @@ $(document).keydown(
 //   );
 // }
 
-var primaImmagine = $(".slider-wrapper img .first");
-var secondaImmagine = $(".slider-wrapper img:nth-child(2)");
-var terzaImmagine = $(".slider-wrapper img:nth-child(3)");
-var quartaImmagine = $(".slider-wrapper img:nth-child(4)");
+var primaImmagine = $(".slider-wrapper .images .first");
+var secondaImmagine = $(".slider-wrapper .images img:nth-child(2)");
+var terzaImmagine = $(".slider-wrapper .images img:nth-child(3)");
+var quartaImmagine = $(".slider-wrapper .images img:nth-child(4)");
 
-if ($(".slider-wrapper .nav .first")).click(
+
+var firstCircle = $(".slider-wrapper .nav > .first");
+var secondCircle = $(".slider-wrapper .nav i:nth-child(2)");
+var thirdCircle = $(".slider-wrapper .nav i:nth-child(3)");
+var fourthCircle = $(".slider-wrapper .nav i:nth-child(4)");
+
+primaImmagine.click(
   function () {
-    primaImmagine.show();
-  }) else if ($(".slider-wrapper .fa-circle:nth-child(2)")).click(
-    function () {
-    secondaImmagine.show();
-  }) else if ($(".slider-wrapper .fa-circle:nth-child(3)").click(
-    function () {
-    terzaImmagine.show();
-  }) else if ($(".slider-wrapper .fa-circle:nth-child(4)").click(
-    function () {
-    quartaImmagine.show();
-  })
-);
-);
+    alert("Primo")
+  }
+)
+
+
+
+// if ($(".slider-wrapper .nav .first").click(
+//   function () {
+//     primaImmagine.show();
+//   }) else if ($(".slider-wrapper .fa-circle:nth-child(2)")).click(
+//     function () {
+//     secondaImmagine.show();
+//   }) else if ($(".slider-wrapper .fa-circle:nth-child(3)").click(
+//     function () {
+//     terzaImmagine.show();
+//   }) else if ($(".slider-wrapper .fa-circle:nth-child(4)").click(
+//     function () {
+//     quartaImmagine.show();
+//   })
+// );
+// );
 
 
 
