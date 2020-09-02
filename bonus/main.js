@@ -3,22 +3,22 @@ $(document).ready(function() {
 
 $(".next").click(
   function() {
-    var removeActive = $(".slider-wrapper .images .active");
+    var removeActive = $(".slider-wrapper .active");
     removeActive.removeClass("active");
     removeActive.next().addClass("active");
     if (removeActive.hasClass("last")) {
-      $(".slider-wrapper .images .first").addClass("active");
+      $(".slider-wrapper .first").addClass("active");
     }
   });
 
 
 $(".prev").click(
   function() {
-    var removeActive = $(".slider-wrapper .images .active");
+    var removeActive = $(".slider-wrapper .active");
     removeActive.removeClass("active");
     removeActive.prev().addClass("active");
     if (removeActive.hasClass("first")) {
-      $(".slider-wrapper .images .last").addClass("active");
+      $(".slider-wrapper .last").addClass("active");
     }
   });
 
