@@ -36,6 +36,34 @@ $(document).keydown(
   }
 });
 
+// function mostraImmagine (numImg, numCircle) {
+//   numCircle.click(
+//     function () {
+//       numImg.show();
+//     }
+//   );
+// }
+
+var primaImmagine = $(".slider-wrapper img .first");
+var secondaImmagine = $(".slider-wrapper img:nth-child(2)");
+var terzaImmagine = $(".slider-wrapper img:nth-child(3)");
+var quartaImmagine = $(".slider-wrapper img:nth-child(4)");
+
+if ($(".slider-wrapper .nav .first")).click(
+  function () {
+    primaImmagine.show();
+  }) else if ($(".slider-wrapper .fa-circle:nth-child(2)")).click(
+    function () {
+    secondaImmagine.show();
+  }) else if ($(".slider-wrapper .fa-circle:nth-child(3)").click(
+    function () {
+    terzaImmagine.show();
+  }) else if ($(".slider-wrapper .fa-circle:nth-child(4)").click(
+    function () {
+    quartaImmagine.show();
+  })
+);
+);
 
 
 
