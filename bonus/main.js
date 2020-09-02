@@ -31,15 +31,6 @@ $(document).keydown(
   }
 });
 
-
-// function mostraImmagine (numImg, numCircle) {
-//   numCircle.click(
-//     function () {
-//       numImg.show();
-//     }
-//   );
-// }
-
 var primaImmagine = $(".slider-wrapper .images .first");
 var secondaImmagine = $(".slider-wrapper .images img:nth-child(2)");
 var terzaImmagine = $(".slider-wrapper .images img:nth-child(3)");
@@ -51,29 +42,30 @@ var secondCircle = $(".slider-wrapper .nav i:nth-child(2)");
 var thirdCircle = $(".slider-wrapper .nav i:nth-child(3)");
 var fourthCircle = $(".slider-wrapper .nav i:nth-child(4)");
 
-primaImmagine.click(
+firstCircle.click(
   function () {
-    alert("Primo")
+    primaImmagine.show();
+  }
+);
+
+secondCircle.click(
+  function () {
+    secondaImmagine.show();
   }
 )
 
+thirdCircle.click(
+  function () {
+    terzaImmagine.show();
+  }
+)
 
+fourthCircle.click(
+  function () {
+    quartaImmagine.show();
+  }
+)
 
-// if ($(".slider-wrapper .nav .first").click(
-//   function () {
-//     primaImmagine.show();
-//   }) else if ($(".slider-wrapper .fa-circle:nth-child(2)")).click(
-//     function () {
-//     secondaImmagine.show();
-//   }) else if ($(".slider-wrapper .fa-circle:nth-child(3)").click(
-//     function () {
-//     terzaImmagine.show();
-//   }) else if ($(".slider-wrapper .fa-circle:nth-child(4)").click(
-//     function () {
-//     quartaImmagine.show();
-//   })
-// );
-// );
 
 
 
