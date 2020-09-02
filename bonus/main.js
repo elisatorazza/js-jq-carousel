@@ -66,8 +66,15 @@ fourthCircle.click(
   }
 )
 
+function click (num1, num2) {
+  num1.click (
+    function () {
+      num2.show();
+    }
+  );
+}
 
-
+click (firstCircle, primaImmagine);
 
 
 }
